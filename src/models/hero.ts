@@ -3,8 +3,7 @@ export enum HeroClass {
   Thief = 'THIEF',
   Wizard = 'WIZARD',
   Cleric = 'CLERIC',
-  Ranger = 'RANGER'
-
+  Ranger = 'RANGER',
 }
 
 export type Hero = {

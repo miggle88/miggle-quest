@@ -6,11 +6,12 @@ export interface ConditionalProps {
 }
 
 export default function Conditional(props: ConditionalProps) {
-  const shouldShow = typeof props.show === 'function' ? props.show() : props.show
+  const shouldShow =
+    typeof props.show === 'function' ? props.show() : props.show
 
   if (!shouldShow) {
     return null
   }
 
-  return (<>{props.children}</>)
+  return <>{props.children}</>
 }

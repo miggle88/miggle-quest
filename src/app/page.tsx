@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation'
 import DestinationLayout from '@/components/layout/DestinationLayout'
 import Button from '@/components/common/Button'
 
-
 export default function Town() {
   const router = useRouter()
 
@@ -15,6 +14,5 @@ export default function Town() {
         <Button onClick={() => router.push('/tavern')}>Tavern</Button>
       </div>
     </DestinationLayout>
-
   )
 }

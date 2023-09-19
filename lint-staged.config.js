@@ -1,4 +1,6 @@
-module.exports = {
-  '*.{js|jsx|ts|tsx}': 'eslint --fix',
-  '*.css': 'eslint --fix'
+const config = {
+  '*.{js,jsx,ts,tsx}': ['eslint', 'prettier --write'],
+  '*.css': ['prettier --write'],
 }
+
+module.exports = config

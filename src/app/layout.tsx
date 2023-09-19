@@ -14,7 +14,7 @@ export interface RootLayoutProps {
 export default function RootLayout(props: RootLayoutProps) {
   return (
     <html lang="en">
-    <body>{props.children}</body>
+      <body>{props.children}</body>
     </html>
   )
 }

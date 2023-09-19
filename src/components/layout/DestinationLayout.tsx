@@ -2,8 +2,8 @@
 
 import styles from './DestinationLayout.module.css'
 import { ReactNode } from 'react'
-import Button from '@/components/common/Button'
 import { useRouter } from 'next/navigation'
+import Button from '@/components/common/Button'
 import Conditional from '@/components/layout/Conditional'
 
 export interface DestinationLayoutProps {
@@ -13,14 +13,17 @@ export interface DestinationLayoutProps {
 }
 
 export default function DestinationLayout(props: DestinationLayoutProps) {
-
   const router = useRouter()
 
   return (
     <div>
       <div className={styles.header}>
-        <div className={styles.gold}><span>0 Gold</span></div>
-        <div className={styles.title}><span>{props.title}</span></div>
+        <div className={styles.gold}>
+          <span>0 Gold</span>
+        </div>
+        <div className={styles.title}>
+          <span>{props.title}</span>
+        </div>
         <div>
           <Conditional show={!!props.backHref}>
             <Button onClick={() => router.push(props.backHref!)}>Back</Button>
@@ -31,5 +34,3 @@ export default function DestinationLayout(props: DestinationLayoutProps) {
     </div>
   )
 }
-
-
