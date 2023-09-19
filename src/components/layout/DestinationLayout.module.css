@@ -1,0 +1,28 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3em;
+}
+
+.gold {
+    color: var(--gold);
+    font-size: 1.5em;
+    padding-left: 4px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

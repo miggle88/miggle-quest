@@ -1,0 +1,21 @@
+.button {
+    border: solid 2px var(--zinc-400);
+    border-radius: 12px;
+    background-color: var(--zinc-800);
+    color: white;
+    margin-right: 4px;
+    padding: 2px 16px;
+    font-size: 1.5em;
+}
+
+.button:hover {
+    background-color: var(--zinc-700);
+}
+
+.button:active {
+    background-color: var(--zinc-500);
+}
+
+.button:disabled {
+    color: red;
+}
