@@ -7,7 +7,6 @@ export enum HeroClass {
 
 }
 
-
 export type Hero = {
   id: string
   accountId: string
