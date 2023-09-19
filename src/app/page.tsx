@@ -1,9 +1,20 @@
-import DestinationLayout from '@/components/layout/DestinationLayout'
+'use client'
 
-export default function Page() {
+import { useRouter } from 'next/navigation'
+import DestinationLayout from '@/components/layout/DestinationLayout'
+import Button from '@/components/common/Button'
+
+
+export default function Town() {
+  const router = useRouter()
+
   return (
     <DestinationLayout title={'Miggleton'}>
-      <h1>Welcome to Town</h1>
+      <div>
+        <h1>Welcome to Town</h1>
+        <Button onClick={() => router.push('/tavern')}>Tavern</Button>
+      </div>
     </DestinationLayout>
+
   )
 }
