@@ -1,25 +1,44 @@
 :root {
-    --zinc-50: #fafafa;
-    --zinc-100: #f4f4f5;
-    --zinc-200: #e4e4e7;
-    --zinc-300: #d4d4d8;
-    --zinc-400: #a1a1aa;
-    --zinc-500: #71717a;
-    --zinc-600: #52525b;
-    --zinc-700: #3f3f46;
-    --zinc-800: #27272a;
-    --zinc-900: #18181b;
-    --zinc-950: #09090b;
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
 
-    --gold: #fcd34d;
+  --gold: #fcd34d;
+
+  --red-50: #fef2f2;
+  --red-100: #fee2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --red-950: #450a0a;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-size: 100%;
+  background-color: black;
+  color: white;
+  font-size: 100%;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.h-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
