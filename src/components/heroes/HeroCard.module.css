@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  border: 1px solid var(--zinc-400);
+  border-radius: 12px;
+  padding: 2px;
+  min-width: 160px;
+  min-height: 80px;
+  text-align: center;
+  font-family: cursive, serif;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.experience {
+  color: #fcd34d;
+}
+
+.warrior {
+  color: #d97706;
+}
+
+.thief {
+  color: #dc2626;
+}
+
+.wizard {
+  color: #9333ea;
+}
+
+.cleric {
+  color: #2563eb;
+}
+
+.ranger {
+  color: #059669;
+}
+
+.dead {
+  color: var(--red-500);
+  border-color: var(--red-500);
+}
