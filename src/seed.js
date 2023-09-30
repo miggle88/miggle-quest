@@ -1,6 +1,12 @@
-import { getDatabaseClient } from '@/db'
+const db = require('@libsql/client/web')
 
-const client = getDatabaseClient()
+// Load .env file into process.env
+require('dotenv').config()
+
+const client = db.createClient({
+  url: process.env.DB_URL,
+  authToken: process.env.DB_AUTH_TOKEN,
+})
 
 async function main() {
   console.log('Creating accounts table...')
